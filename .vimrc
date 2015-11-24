@@ -1,3 +1,6 @@
+"setup: install a color scheme, using solarized light on mac
+"set up Vundle, download and clone into bundles, then run an install on all
+"this stuff. 
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
