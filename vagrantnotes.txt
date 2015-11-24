@@ -1,0 +1,10 @@
+vagrant runs the provision script as root user
+you can then another setup script with privileged: false
+that will run as the default user instead of as a root user. 
+It would be useful to run on script to provision the machine, 
+and another to provision the user.
+
+su changes to root user
+sudo runs a single command as root 
+
+
