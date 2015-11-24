@@ -1,6 +1,8 @@
 # script to set up a desktop
 # things to get: 
 # i3, git, vim, 
+	# setup powerline for vim and tmux. 
+	# get some kind of statusbar for i3 as well. 
 # copy into vimrc
 # python 3.4, 3.5, virtualenvwrapper
 # ruby, node, go,
@@ -32,3 +34,5 @@
 	# chmod/chown, (chmod changes access, chown changes ownership)
 
 # set up drop box on the command line, they have a python utility.  
+
+# add symlinks to the proper locations of all of these things. 

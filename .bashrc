@@ -1,3 +1,6 @@
+# executed for non-login shells
+# called by .bash_profile. 
+
 alias 2../="cd ../../"
 alias 3../="cd ../../../"
 alias home="~"

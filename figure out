@@ -1,0 +1,70 @@
+I need to setup bashrc, tmux, vim
+
+Problems right now in tmux
+- tmux absolutely fucks vim
+- tmux needs powerline like vim
+
+Bashrc problems
+- function to change around in directories quickly
+- 
+
+
+Things I need to figure out in vim
+- closing a buffer and not vim
+- dont use tabs. 
+
+
+to close a buffer
+:bw = buffer wipeout - don't use this. 
+:bd = delete the buffer - use this over :bw
+
+
+
+to move windows
+:winc [hjkl]
+:vsp
+:sp
+:q - quit the window
+
+:bn - next buffer
+:ls - show buffers
+:2b - move to buffer 2
+
+:on - close all other window splits. 
+
+
+
+
+
+
+Login vs non-login shell
+- when you open a new terminal, like in gnome terminal, and it lets you use
+it right away, that is a non-login shell
+	* in ubuntu, the only login shell is your desktop
+- when you ssh into the system, or do sudo -u username -i that is a login 
+
+
+bash only reads .profile if .bash_profile doesn't exist. 
+
+
+Make things easier
+- have bash_profile read .profile
+	* there is only .profile on my desktop
+	* it executes .bashrc
+
+- .bashrc does some things. 
+	* 
+
+
+set up virtualenvwrapper to work, put this in bashrc. 
+# put these lines in bashrc. 
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
+
+
+
+
+Cheatsheets to create
+- a list of vim shortcuts
+- a list of bash functions that I've written. 
