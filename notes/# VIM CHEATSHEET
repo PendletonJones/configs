@@ -6,6 +6,8 @@
 :sp 			- split
 :q 				- quit the window
 :on 			- close all other window splits
+<CTRL> + ww 	- switch between windows. 
+
 
 # Movement
 [number][hjkl] 	- move by number of lines
@@ -44,16 +46,26 @@ a 				- append after the cursor
 A 				- append at end of line
 r 				- replace charactr
 R 				- replace more than one character
+xp 				- transpose two letters
+cc 				- replace entire line
+cw 				- replace to end of word
+c$ 				- replace to end of line
 jj				- exit editing
+
 
 # Visual Mode
 v 				- enter visual (select)
 V 				- enter visual (select line)
+y 				- yank marked text
+~ 				- switch case. 
+d 				- delete marked text. 
+ib 				- inner () block
+iB 				- inner {} block
 
 # Delete 
-dd 			- delete line
+dd 				- delete line
 D 				- delete to end of line
-d$ 			- delete to end of line 
+d$ 				- delete to end of line 
 de 				- to end of word
 
 # Search
