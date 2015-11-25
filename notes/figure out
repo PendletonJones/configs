@@ -1,0 +1,24 @@
+I need to setup bashrc, tmux, vim
+
+
+- .bashrc does some things. 
+	* 
+- create .bash_aliases
+	* would be nice to have things go in here. 
+
+
+set up virtualenvwrapper to work, put this in bashrc. 
+
+
+
+Cheatsheets to create
+- a list of vim shortcuts
+- a list of bash functions that I've written. 
+- list of tmux shortcuts
+	https://gist.github.com/MohamedAlaa/2961058
+
+
+
+Three things right now
+- MOTD
+- color prompt

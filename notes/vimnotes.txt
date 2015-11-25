@@ -1,0 +1,62 @@
+VIM NOTES
+
+D or d$ will remove the rest of the line, 
+A will insert at the end of the line
+C is like D but will put your cursor at the end of the line in insert mode
+
+
+CTRL + w  // this will let you jump between panes when you use it with a direction
+// just as a plain command it will switch between panes when you repeat it.
+
+v is select
+V is select line
+P is paste
+y is copy (yank)
+d is cut (delete)
+
+
+file navigation: 
+:E will bring up the file tree. 
+d creates a new directory
+% creates and opens a new file
+D deletes a directory or file
+R renames a file
+o opens the file in a horizontal split
+v opens the file in a vertical split
+dd deletes a line 
+dw deletes a word
+d$ also will delete to the end of the line
+de will delete to the end of the word
+
+d2w will delete two words, put a number in front of the motion to accomplish this. 
+
+
+* undoing things
+u - undo the last change
+U - undo changes to a line
+control-R will redo changes
+
+putting and replacing
+r + [char] will replace the character with what is supposed to be there. 
+p will paste the previously deleted text in the line below the one highlighted. 
+ce will delet the rest of the word from the cursor to the end and allow you to replace it. 
+c works just like d, c [number] motion
+c2$ will delete to the end of the line
+
+c is a "change" operator where d is a "delete" operator and p is a "put" operator. 
+The difference is that c will put you into insert mode where d will not 
+
+4w will move forward 4 words
+3e will move to the end of the word, forward 3 words (use any number you like)
+
+
+
+
+
+
+
+
+
+
+
+
