@@ -46,9 +46,10 @@ function parse_git_dirty {
 }
 
 # date-time user@host:[git] dir:$ : 
-export PS1="(\d - \t) \u@\h:[\`parse_git_branch\`] \W:\$ "
+# export PS1="(\d - \t) \u@\h:[\`parse_git_branch\`] \W:\$ "
+# with colors
+export PS1="\e[1;34m\d \t \e[m\e[0;32m\u@\h:\e[m\e[0;36m[\`parse_git_branch\`]\W:\$ \e[m"
 
+# syntax for coloring PS1
+# \e[x;ym $PS1 \e[m
 
-# I should also be able to give myself a colored prompt. 
-# I want to have user@host be one color, dir be another, 
-# git status be another.

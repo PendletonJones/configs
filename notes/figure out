@@ -1,15 +1,3 @@
-I need to setup bashrc, tmux, vim
-
-
-- .bashrc does some things. 
-	* 
-- create .bash_aliases
-	* would be nice to have things go in here. 
-
-
-set up virtualenvwrapper to work, put this in bashrc. 
-
-
 
 Cheatsheets to create
 - a list of vim shortcuts
@@ -22,3 +10,26 @@ Cheatsheets to create
 Three things right now
 - MOTD
 - color prompt
+
+Task: Add colors to the prompt
+
+To add colors to the shell prompt use the following export command syntax:
+'\e[x;ym $PS1 \e[m'
+Where,
+
+\e[ : Start color scheme.
+x;y : Color pair to use (x;y)
+$PS1 : Your shell prompt variable.
+\e[m : Stop color scheme.
+
+
+38;5;23m
+
+# light blue
+"\e[1;34m   \e[m"
+
+# green 
+"\e[0;32m   \e[m"
+
+# cyan
+"\e[0;36m   \e[m"
