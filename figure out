@@ -1,9 +1,5 @@
 I need to setup bashrc, tmux, vim
 
-Problems right now in tmux
-- tmux absolutely fucks vim
-- tmux needs powerline like vim
-
 Bashrc problems
 - function to change around in directories quickly
 - 
@@ -33,7 +29,7 @@ to move windows
 :on - close all other window splits. 
 
 
-
+tmux attach || tmux new
 
 
 
@@ -54,6 +50,8 @@ Make things easier
 
 - .bashrc does some things. 
 	* 
+- create .bash_aliases
+	* would be nice to have things go in here. 
 
 
 set up virtualenvwrapper to work, put this in bashrc. 
@@ -65,6 +63,17 @@ source /usr/local/bin/virtualenvwrapper.sh
 
 
 
+
 Cheatsheets to create
 - a list of vim shortcuts
 - a list of bash functions that I've written. 
+- list of tmux shortcuts
+	https://gist.github.com/MohamedAlaa/2961058
+
+
+
+Three things right now
+- MOTD
+- color prompt
+- get vim colors to work in tmux. 
+	* tmux -2 # force tmux to use colors 

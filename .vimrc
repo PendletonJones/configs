@@ -1,6 +1,3 @@
-"setup: install a color scheme, using solarized light on mac
-"set up Vundle, download and clone into bundles, then run an install on all
-"this stuff. 
 set nocompatible
 filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
@@ -10,16 +7,17 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
 
+
 call vundle#end()
 filetype plugin indent on
-
+set clipboard=unnamed
 set number
 set mouse=a
 
 set statusline=
 set statusline+=%2*\ %y\   " File Type
 
-
+set shiftwidth=4 
 set ruler
 set cursorline
 "set cursorcolumn
@@ -39,5 +37,6 @@ imap jj <Esc>
 syntax enable
 set background=light
 colorscheme solarized
+
 
 
