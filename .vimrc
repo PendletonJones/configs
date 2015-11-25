@@ -41,4 +41,4 @@ set background=light
 colorscheme solarized
 
 
-
+let g:NERDTreeDirArrows=0

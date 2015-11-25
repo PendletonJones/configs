@@ -8,6 +8,14 @@
 :on 			- close all other window splits
 <CTRL> + ww 	- switch between windows. 
 
+# NERDTree 
+Enter  		- go to the directory
+C 		- change root directory
+i		- open file in horizontal 
+s 		- open file in vertical
+? 		- toggle quick help
+R 		- refresh the tree
+I 		- toggle hidden files
 
 # Movement
 [number][hjkl] 	- move by number of lines
