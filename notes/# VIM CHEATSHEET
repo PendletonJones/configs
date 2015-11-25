@@ -37,30 +37,31 @@ H/L 			- move to begining or end of viewport.
 
 
 # Editing 
-:i				- enter editing
-:o 				- open cursor on next line
-:O 				- open cursor on previous line
-:a 				- append after the cursor
-:A 				- append at end of line
-:r 				- replace charactr
-:R 				- replace more than one character
-:jj				- exit editing
+i				- enter editing
+o 				- open cursor on next line
+O 				- open cursor on previous line
+a 				- append after the cursor
+A 				- append at end of line
+r 				- replace charactr
+R 				- replace more than one character
+jj				- exit editing
 
 # Visual Mode
-:v 				- enter visual (select)
-:V 				- enter visual (select line)
+v 				- enter visual (select)
+V 				- enter visual (select line)
 
 # Delete 
-:dd 			- delete line
-:D 				- delete to end of line
-:d$ 			- delete to end of line 
+dd 			- delete line
+D 				- delete to end of line
+d$ 			- delete to end of line 
+de 				- to end of word
 
 # Search
 :<number> 		- go to number
 :n 				- go to next occurance
 :N 				- to to previous
 :/<value>		- search for value
-:% 				- go to matching parens
+% 				- go to matching parens
 :set id			- ignore case
 :set is 		- partial matches
 :set hls 		- highlight all searches
