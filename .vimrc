@@ -42,3 +42,4 @@ colorscheme solarized
 
 
 let g:NERDTreeDirArrows=0
+command NT NERDTree

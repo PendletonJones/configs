@@ -242,7 +242,7 @@ export PS1="\e[1;34m\d \t \e[m\e[0;32m\u@\h:\e[m\e[0;36m[\`parse_git_branch\`]\W
 
 alias tmux="TERM=screen-256color-bce tmux"
 
-
+setxkbmap -option ctrl:nocaps
 
 # user functions
 # mcd()
