@@ -28,3 +28,10 @@ sudo apt-get -y isntall postgresql-contrib
 
 sudo pip install --update pip
 sudo npm install -g npm
+
+
+# note for setting up desktop
+# install ubuntu-tweak and unity tweak, invert srolling
+# configure git with username and email
+# setxkbmap -option ctrl:nocaps 
+# set caps to control 
