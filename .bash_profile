@@ -37,4 +37,5 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-
+export NVM_DIR=~/.nvm
+  . $(brew --prefix nvm)/nvm.sh
