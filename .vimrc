@@ -43,3 +43,9 @@ colorscheme solarized
 
 let g:NERDTreeDirArrows=0
 command NT NERDTree
+
+
+inoremap ( ()<Esc>i
+inoremap { {}<Esc>i
+inoremap " ""<Esc>i
+inoremap ' ''<Esc>i
