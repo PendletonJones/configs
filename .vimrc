@@ -15,7 +15,8 @@ filetype plugin indent on
 set clipboard=unnamed
 set number
 set mouse=a
-
+set tabstop=4
+set expandtab
 set statusline=
 set statusline+=%2*\ %y\   " File Type
 
