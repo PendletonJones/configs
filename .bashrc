@@ -91,6 +91,8 @@ fi
 alias ll='ls -alF'
 alias la='ls -A'
 alias l='ls -CF'
+# show only files, not directories.
+alias lf='ls -pal | grep -v /'
 alias g='grep'
 # Add an "alert" alias for long running commands.  Use like so:
 #   sleep 10; alert
