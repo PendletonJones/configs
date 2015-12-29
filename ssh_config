@@ -1,0 +1,7 @@
+Host desktop
+    HostName pendletron.local
+    User pendleton
+
+Host desktop_away
+    HostName pmj.io
+    User pendleton

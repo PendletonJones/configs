@@ -226,6 +226,11 @@ function parse_git_dirty {
 	fi
 }
 
+function add_dock_space {
+    defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
+}
+
+
 # show the path of the function
 
 alias show_path="echo $PATH | awk -v RS=: '1'"
