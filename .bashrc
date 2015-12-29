@@ -228,6 +228,11 @@ function parse_git_dirty {
 	fi
 }
 
+# show the path of the function
+
+alias show_path="echo $PATH | awk -v RS=: '1'"
+
+
 # date-time user@host:[git] dir:$ : 
 # export PS1="(\d - \t) \u@\h:[\`parse_git_branch\`] \W:\$ "
 # with colors
@@ -238,9 +243,9 @@ export PS1="\e[1;34m\d \t \e[m\e[0;32m\u@\h:\e[m\e[0;36m[\`parse_git_branch\`]\W
 
 
 # virtualenvwrapper stuff, uncomment to use. 
-# export WORKON_HOME=$HOME/.virtualenvs
-# export PROJECT_HOME=$HOME/Devel
-# source /usr/local/bin/virtualenvwrapper.sh
+export WORKON_HOME=$HOME/.virtualenvs
+export PROJECT_HOME=$HOME/Devel
+source /usr/local/bin/virtualenvwrapper.sh
 
 alias tmux="TERM=screen-256color-bce tmux"
 
