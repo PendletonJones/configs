@@ -9,6 +9,8 @@ Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
 
+Bundle 'mattn/webapi-vim'
+Bundle 'mattn/gist-vim'
 
 call vundle#end()
 filetype plugin indent on
