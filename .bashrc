@@ -241,6 +241,7 @@ alias show_path="echo $PATH | awk -v RS=: '1'"
 # date-time user@host:[git] dir:$ : 
 # export PS1="(\d - \t) \u@\h:[\`parse_git_branch\`] \W:\$ "
 # with colors
+# there is more than 1 PS1 declaration in here, I need to remove the old ones
 export PS1="\e[1;34m\d \t \e[m\e[0;32m\u@\h:\e[m\e[0;36m[\`parse_git_branch\`]\W:\e[m\n\$ "
 
 # syntax for coloring PS1
