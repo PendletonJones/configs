@@ -4,24 +4,8 @@
 
 # execute the nonlogin script if it exists. 
 
-# Setting PATH for Python 3.3
-# The orginal version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.3/bin:${PATH}"
-export PATH
-
-# Setting PATH for Python 3.4
-# The orginal version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
-export PATH
-
-# Setting PATH for Python 3.5
-# The orginal version is saved in .bash_profile.pysave
-PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
-export PATH
-alias ll='ls -l'
 
 
-export WORKON_HOME=$HOME/.virtualenvs
 
 
 # From Profile 
@@ -37,5 +21,4 @@ if [ -d "$HOME/bin" ] ; then
     PATH="$HOME/bin:$PATH"
 fi
 
-export NVM_DIR=~/.nvm
-  . $(brew --prefix nvm)/nvm.sh
+

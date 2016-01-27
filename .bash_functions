@@ -2,14 +2,15 @@
 
 
 
+
 # USER CREATED / ADDED FUNCTIONALITY 
 
-mcd(){
+function mcd(){
 	mkdir -p $1
 	cd $1
 }
 
-extract(){
+function extract(){
 	if [ -z "$1" ]; then
 		# display usage if no parameters given 
 		echo "Usage: extract <path/file_path>.<zip|rar|bz2|qz|tar|tbz2|tgz|Z\7Z\xz|ex|tar.bz2|tar.gz|tar.xz>"
@@ -109,3 +110,10 @@ function parse_git_dirty {
 function add_dock_space {
     defaults write com.apple.dock persistent-apps -array-add '{tile-data={}; tile-type="spacer-tile";}'
 }
+
+export -f mcd
+export -f up
+export -f extract
+export -f parse_git_branch
+export -f parse_git_dirty
+export -f add_dock_space

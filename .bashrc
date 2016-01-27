@@ -32,6 +32,18 @@ if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
 fi
 
+if [ -f ~/.bash_functions ]; then
+    . ~/.bash_functions
+fi
+
+if [ -f ~/.bash_history_config ]; then
+    . ~/.bash_history_config
+fi
+
+if [ -f ~/.bash_prompt ]; then
+    . ~/.bash_prompt
+fi
+
 
 
 
@@ -55,6 +67,24 @@ export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
 export WORKON_HOME=$HOME/.virtualenvs
 # export PROJECT_HOME=$HOME/Devel
 source /usr/local/bin/virtualenvwrapper.sh
+
+
+# Setting PATH for Python 3.3
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.3/bin:${PATH}"
+export PATH
+
+# Setting PATH for Python 3.4
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.4/bin:${PATH}"
+export PATH
+
+# Setting PATH for Python 3.5
+# The orginal version is saved in .bash_profile.pysave
+PATH="/Library/Frameworks/Python.framework/Versions/3.5/bin:${PATH}"
+export PATH
+
+
 
 
 setxkbmap -option ctrl:nocaps

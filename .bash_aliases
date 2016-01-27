@@ -1,8 +1,6 @@
 #! /usr/bin/env bash
 # vim: set filetype=sh :
 
-
-
 alias mkdir="mkdir -pv"
 alias lsd="ls -dl */"
 alias py3="python3.4"
