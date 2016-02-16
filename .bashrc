@@ -19,6 +19,9 @@ shopt -s checkwinsize
 shopt -s globstar
 shopt -s dotglob nullglob # glob regular patterns 
 
+setxkbmap -option ctrl:nocaps
+
+
 # make less more friendly for non-text input files, see lesspipe(1)
 [ -x /usr/bin/lesspipe ] && eval "$(SHELL=/bin/sh lesspipe)"
 
@@ -87,4 +90,10 @@ export PATH
 
 
 
-setxkbmap -option ctrl:nocaps
+# SOMETHING TO ADD
+# CDPATH can add more than one value 
+# separted by colon. This makes it easier to jump between directories
+# CDPATH=.:~/etc:/VAR
+
+# also, make a readme.md that includes all of the shortcuts, etc so I 
+# don't have to pull them up all the time. 

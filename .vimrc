@@ -1,7 +1,7 @@
+
+"PLUGINS AND EXTENSIONS
 execute pathogen#infect()
 
-set nocompatible
-filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
@@ -13,38 +13,89 @@ Bundle 'mattn/webapi-vim'
 Bundle 'mattn/gist-vim'
 
 call vundle#end()
-filetype plugin indent on
-set clipboard=unnamed
-set number
-set mouse=a
-set tabstop=4
-set expandtab
-set statusline=
-set statusline+=%2*\ %y\   " File Type
 
-set shiftwidth=4 
-set ruler
-set cursorline
-"set cursorcolumn
-set colorcolumn=100
-set laststatus=2
-syntax on
-
-let g:netrw_liststyle=3
+let g:NERDTreeDirArrows=0
+command NT NERDTree
 
 " Enable vim-airline
 let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 set t_Co=256
 let g:solarized_termcolors=256
-imap jj <Esc>
 
+
+
+
+
+"APPEARANCE AND STYLE
 syntax enable
-set background=light
+set background=dark
 colorscheme solarized
 
+set cursorline "highlight current line
+set colorcolumn=80 "comma separated list of colored columns
 
-let g:NERDTreeDirArrows=0
-command NT NERDTree
+
+
+"STATUS LINE
+set laststatus=2
+set statusline+=%2*\ %y\   " File Type
+set ruler " display current cursor position in the lower right hand corner
+set number "show line numbers
+
+
+
+
+
+
+"REGULAR OPTIONS 
+set nocompatible "not backwards compatible with vi
+set backspace=indent,eol,start "in insert mode, backspace deletes whitespace, eol, char before
+filetype plugin indent on
+set clipboard=unnamed "there are a bunch of register options for this, *
+set mouse=a "enable mouse in all modes
+
+
+
+
+
+"SEARCH OPTIONS
+set incsearch " starts searching after you start typing
+set hlsearch " turns on search highlighting 
+set ic      " set case insensitive searching; set noic will change back
+set showmatch " show the matching parens
+
+
+
+
+
+"TAB SIZE AND BEHAVIOR
+set tabstop=4       " make tabs appear as 4 characters if set to 8 
+set softtabstop=4   " fixed the behavior of the backspace
+set expandtab       " expand tabs to spaces
+set shiftwidth=4    " width of < and >  
+set autoindent      " vim will try to auto indent lines for you 
+" there is a nice vimcast about this but this works for now
+
+
+"INVISIBLE CHARACTERS
+set list
+set listchars=tab:▸\ ,eol:¬  " the tab character doesn't work 
+
+
+
+
+"KEY REMAPPINGS
+imap jj <Esc>
+imap ss <C-o>:w<CR>
+
+noremap ss :w<CR>
+noremap tt :noh<CR>
+
+nnoremap <C-n> :bnext<CR>
+nnoremap <C-p> :bprevious<CR>
+" ZZ in normal mode saves and quits 
+
+
 
 
