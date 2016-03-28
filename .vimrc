@@ -79,7 +79,7 @@ set autoindent      " vim will try to auto indent lines for you
 
 
 "INVISIBLE CHARACTERS
-set list
+"set list
 set listchars=tab:▸\ ,eol:¬  " the tab character doesn't work 
 
 
@@ -87,9 +87,9 @@ set listchars=tab:▸\ ,eol:¬  " the tab character doesn't work
 
 "KEY REMAPPINGS
 imap jj <Esc>
-imap ss <C-o>:w<CR>
+imap cx <C-o>:w<CR>
 
-noremap ss :w<CR>
+noremap cx :w<CR>
 noremap tt :noh<CR>
 
 nnoremap <C-n> :bnext<CR>

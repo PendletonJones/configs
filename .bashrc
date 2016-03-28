@@ -89,8 +89,11 @@ export PATH
 
 
 
+# npm configuration -- see website for other configuration details. 
+ export PATH=~/.npm-global/bin:$PATH
 
-# SOMETHING TO ADD
+
+ #SOMETHING TO ADD
 # CDPATH can add more than one value 
 # separted by colon. This makes it easier to jump between directories
 # CDPATH=.:~/etc:/VAR
