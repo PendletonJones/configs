@@ -14,4 +14,4 @@ HISTFILESIZE=200000 # keep a huge history
 # year month day time
 HISTTIMEFORMAT="%F %T"
 
-HISTIGNORE="df*:free*:ls*:ll*:pwd*:history"
+HISTIGNORE="df*:free*:pwd*:history"

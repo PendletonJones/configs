@@ -38,11 +38,99 @@ xterm*|rxvt*)
 esac
 
 
+#
+# bash prompt support for docker-machine
+#
+# This script allows you to see the active machine in your bash prompt.
+#
+# To enable:
+#  1a. Copy this file somewhere and source it in your .bashrc
+#      source /some/where/docker-machine-prompt.bash
+#  1b. Alternatively, just copy this file into into /etc/bash_completion.d
+#  2. Change your PS1 to call __docker-machine-ps1 as command-substitution
+#     PS1='[\u@\h \W$(__docker_machine_ps1 " [%s]")]\$ '
+#
+# Configuration:
+#
+# DOCKER_MACHINE_PS1_SHOWSTATUS
+#   When set, the machine status is indicated in the prompt. This can be slow,
+#   so use with care.
+#
+
+__docker_machine_ps1 () {
+    local format=${1:- [%s]}
+    if test ${DOCKER_MACHINE_NAME}; then
+        local status
+        if test ${DOCKER_MACHINE_PS1_SHOWSTATUS:-false} = true; then
+            status=$(docker-machine status ${DOCKER_MACHINE_NAME})
+            case ${status} in
+                Running)
+                    status=' R'
+                    ;;
+                Stopping)
+                    status=' R->S'
+                    ;;
+                Starting)
+                    status=' S->R'
+                    ;;
+                Error|Timeout)
+                    status=' E'
+                    ;;
+                *)
+                    # Just consider everything elase as 'stopped'
+                    status=' S'
+                    ;;
+            esac
+        fi
+        printf -- "${format}" "${DOCKER_MACHINE_NAME}${status}"
+    fi
+}
+
+
 # date-time user@host:[git] dir:$ : 
 # export PS1="(\d - \t) \u@\h:[\`parse_git_branch\`] \W:\$ "
 # with colors
 # there is more than 1 PS1 declaration in here, I need to remove the old ones
-export PS1="\e[1;34m\d \t \e[m\e[0;32m\u@\h:\e[m\e[0;36m[\`parse_git_branch\`]\W:\e[m\n\$ "
+export PS1="\
+\e[1;34m\
+\d \t \
+\e[m\
+\e[0;32m\
+\u@\h:\
+\e[m\
+\e[0;36m\
+[\`parse_git_branch\`]\
+\W\
+\e[m\
+\n\$ "
 
-# syntax for coloring PS1
+
+
+# export PS1="\                 # start prompt
+# \e[1;34m\                     # start blue color date
+# \d \t \                       # date format
+# \e[m\                         # end blue color prompt
+# \e[0;32m\                     # start green color prompt
+# \u@\h:\                       # show user and host name
+# \e[m\                         # end green color prompt
+# \e[0;36m\                     # start light blue prompt
+# [\`parse_git_branch\`]\       # evaluate show git branch 
+# \W\                           # show working directory
+# \e[m\                         # end color prompt
+# \n\$ "                        # newline and $ shell prompt. 
+
+
+# syntax for coloring PS1 http://www.cyberciti.biz/faq/bash-shell-change-the-color-of-my-shell-prompt-under-linux-or-unix/
 # \e[x;ym $PS1 \e[m
+# 
+
+
+
+# should show the docker status 
+# \e[m[$(__docker_machine_ps1 " [%s]")]
+
+
+# \e[ : Start color scheme.
+# x;y : Color pair to use (x;y)
+# $PS1 : Your shell prompt variable.
+# \e[m : Stop color scheme.

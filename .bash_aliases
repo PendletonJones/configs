@@ -5,6 +5,8 @@ alias mkdir="mkdir -pv"
 alias lsd="ls -dl */"
 alias py3="python3.4"
 alias py2="python"
+
+
 tatt(){
 	tmux a -t $1
 }
@@ -37,3 +39,6 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 alias show_path="echo $PATH | awk -v RS=: '1'"
 alias tmux="TERM=screen-256color-bce tmux"
+
+
+alias m_show_status="/usr/local/show_status"
