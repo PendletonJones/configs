@@ -6,21 +6,29 @@ set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
 Plugin 'VundleVim/Vundle.vim'
-Plugin 'airblade/vim-gitgutter'
-Plugin 'bling/vim-airline'
-Plugin 'terryma/vim-multiple-cursors'
-Plugin 'pangloss/vim-javascript'
-Plugin 'mxw/vim-jwx'
+
+" Plugins related to exploring files
 Plugin 'scrooloose/nerdtree'
-Plugin 'vim-surround' "There was an error with this package. 
+Plugin 'jlanzarotta/bufexplorer'
+Plugin 'jeetsukumaran/vim-buffergator'
+
+"Plugins related to syntax highlighting
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
+
 Plugin 'mattn/webapi-vim'
 Plugin 'mattn/gist-vim'
 Plugin 'altercation/vim-colors-solarized'
+
+" Plugins related to enhancing vim 
 Plugin 'tomtom/tcomment_vim'
-Plugin 'ggreer/the_silver_searcher' " There was an issue here also
-Plugin 'jlanzarotta/bufexplorer'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'tpope/vim-surround'
+Plugin 'airblade/vim-gitgutter'
+Plugin 'bling/vim-airline'
 Plugin 'ctrlpvim/ctrlp.vim'
-Plugin 'jeetsukumaran/vim-buffergator'
+Plugin 'ggreer/the_silver_searcher' " There was an issue here also
+Plugin 'Valloric/YouCompleteMe'
 
 call vundle#end()
 
@@ -33,6 +41,10 @@ let g:airline_powerline_fonts = 1
 set t_Co=256
 let g:solarized_termcolors=256
 let g:gist_use_password_in_gitconfig = 1 " this is for using github login
+let g:ctrlp_show_hidden = 1
+let g:jsx_ext_required = 0 " Allow JSX in normal JS files
+
+
 
 
 
@@ -53,7 +65,8 @@ set ruler " display current cursor position in the lower right hand corner
 set number "show line numbers
 
 
-
+set wildignore+=__pycache__/*
+set wildignore+=*.cpython*
 
 
 
@@ -104,7 +117,6 @@ noremap tt :noh<CR>
 nnoremap <C-n> :bnext<CR>
 nnoremap <C-p> :bprevious<CR>
 " ZZ in normal mode saves and quits 
-
 
 
 

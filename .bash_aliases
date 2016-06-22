@@ -45,3 +45,9 @@ alias tmux="TERM=screen-256color-bce tmux"
 alias m_show_status="/usr/local/show_status"
 
 alias vbm="vboxmanage"
+
+
+# docker shorcuts
+alias dmm="docker-machine"
+alias dcc="docker-compose"
+
