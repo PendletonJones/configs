@@ -1,6 +1,6 @@
 
 "PLUGINS AND EXTENSIONS
-execute pathogen#infect()
+"execute pathogen#infect()"
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -8,9 +8,19 @@ call vundle#begin()
 Plugin 'VundleVim/Vundle.vim'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
-
-Bundle 'mattn/webapi-vim'
-Bundle 'mattn/gist-vim'
+Plugin 'terryma/vim-multiple-cursors'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jwx'
+Plugin 'scrooloose/nerdtree'
+Plugin 'vim-surround' "There was an error with this package. 
+Plugin 'mattn/webapi-vim'
+Plugin 'mattn/gist-vim'
+Plugin 'altercation/vim-colors-solarized'
+Plugin 'tomtom/tcomment_vim'
+Plugin 'ggreer/the_silver_searcher' " There was an issue here also
+Plugin 'jlanzarotta/bufexplorer'
+Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'jeetsukumaran/vim-buffergator'
 
 call vundle#end()
 
@@ -22,8 +32,7 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_powerline_fonts = 1
 set t_Co=256
 let g:solarized_termcolors=256
-
-
+let g:gist_use_password_in_gitconfig = 1 " this is for using github login
 
 
 

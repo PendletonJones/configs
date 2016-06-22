@@ -30,7 +30,6 @@ fi
 alias ll='ls -alFh'
 alias la='ls -A'
 alias l='ls -CF'
-alias ls='ll'
 
 # show only files, not directories.
 alias lf='ls -pal | grep -v /'
