@@ -31,9 +31,6 @@ Plugin 'fisadev/vim-ctrlp-cmdpalette'
 Plugin 'ggreer/the_silver_searcher' " There was an issue here also
 Plugin 'Valloric/YouCompleteMe'
 
-
-
-
 call vundle#end()
 
 let g:NERDTreeDirArrows=0
@@ -59,7 +56,7 @@ colorscheme solarized
 
 set cursorline "highlight current line
 set colorcolumn=80 "comma separated list of colored columns
-
+set relativenumber
 
 
 "STATUS LINE

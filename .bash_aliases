@@ -9,7 +9,7 @@ alias py2="python"
 alias breload="source ~/.bashrc"
 alias show_path="echo $PATH | awk -v RS=: '1'"
 alias vbm="vboxmanage"
-
+alias mv="mv -vn"
 
 
 

@@ -19,7 +19,12 @@ shopt -s checkwinsize
 shopt -s globstar
 shopt -s dotglob nullglob # glob regular patterns 
 
+
+
+# this causes an issue on mac
+# make sure it does something on linux then come back to it 
 setxkbmap -option ctrl:nocaps
+
 
 
 # make less more friendly for non-text input files, see lesspipe(1)
