@@ -117,3 +117,11 @@ export -f extract
 export -f parse_git_branch
 export -f parse_git_dirty
 export -f add_dock_space
+
+. "$HOME/configs/cd_func.sh"
+
+
+
+
+
+

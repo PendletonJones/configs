@@ -27,8 +27,12 @@ Plugin 'tpope/vim-surround'
 Plugin 'airblade/vim-gitgutter'
 Plugin 'bling/vim-airline'
 Plugin 'ctrlpvim/ctrlp.vim'
+Plugin 'fisadev/vim-ctrlp-cmdpalette'
 Plugin 'ggreer/the_silver_searcher' " There was an issue here also
 Plugin 'Valloric/YouCompleteMe'
+
+
+
 
 call vundle#end()
 
