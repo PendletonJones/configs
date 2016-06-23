@@ -44,7 +44,7 @@ let g:solarized_termcolors=256
 let g:gist_use_password_in_gitconfig = 1 " this is for using github login
 let g:ctrlp_show_hidden = 1
 let g:jsx_ext_required = 0 " Allow JSX in normal JS files
-
+let NERDTreeShowHidden=1
 
 
 
