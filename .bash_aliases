@@ -40,7 +40,6 @@ alias lsd="ls -dl */"
 # docker shorcuts
 alias dmm="docker-machine"
 alias dcc="docker-compose"
-alias dmmenv="eval $(docker-machine env)"
 
 # tmux shortcuts
 alias tmux="TERM=screen-256color-bce tmux"
