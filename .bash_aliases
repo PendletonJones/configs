@@ -37,9 +37,12 @@ alias lsd="ls -dl */"
 
 
 
+alias subl='open -a "sublime text"'
+
 # docker shorcuts
 alias dmm="docker-machine"
-alias dcc="docker-compose"
+alias compose="docker-compose"
+
 
 # tmux shortcuts
 alias tmux="TERM=screen-256color-bce tmux"

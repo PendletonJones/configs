@@ -1,6 +1,5 @@
 
 "PLUGINS AND EXTENSIONS
-"execute pathogen#infect()"
 
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
@@ -47,7 +46,8 @@ let g:jsx_ext_required = 0 " Allow JSX in normal JS files
 let NERDTreeShowHidden=1
 
 
-
+set autochdir
+let NERDTreeChDirMode=2
 
 "APPEARANCE AND STYLE
 syntax enable

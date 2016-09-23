@@ -67,6 +67,12 @@ if ! shopt -oq posix; then
   fi
 fi
 
+if [ -f $(brew --prefix)/etc/bash_completion ]; then
+. $(brew --prefix)/etc/bash_completion
+fi
+
+
+
 export PATH="$HOME/.linuxbrew/bin:$PATH"
 export MANPATH="$HOME/.linuxbrew/share/man:$MANPATH"
 export INFOPATH="$HOME/.linuxbrew/share/info:$INFOPATH"
@@ -97,6 +103,7 @@ export PATH
 # npm configuration -- see website for other configuration details. 
  export PATH=~/.npm-global/bin:$PATH
 
+export MSG_GITHUB_TOKEN="295c4c045e43b04c3cc536d516a8781a05e17729"
 
  #SOMETHING TO ADD
 # CDPATH can add more than one value 
