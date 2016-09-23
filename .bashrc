@@ -103,7 +103,6 @@ export PATH
 # npm configuration -- see website for other configuration details. 
  export PATH=~/.npm-global/bin:$PATH
 
-export MSG_GITHUB_TOKEN="295c4c045e43b04c3cc536d516a8781a05e17729"
 
  #SOMETHING TO ADD
 # CDPATH can add more than one value 
