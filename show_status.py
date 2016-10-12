@@ -76,6 +76,14 @@ parser.add_option("-p", "--pull",
                 help        = "Do a 'git pull' if you've set a remote with -r it will pull from there"
                 )
 
+
+parser.add_option("-c", "--checkout",
+                action      = "store",
+                dest        = "checkout",
+                default     = False,
+                help        = "Do a 'git checkout'"
+                )
+
 # Now, parse the args
 (options, args) = parser.parse_args()
 
@@ -127,6 +135,16 @@ if __name__ == "__main__":
 		if -1 != out.find('nothing'):
                     result = bcolors.OKGREEN + "No Changes" + bcolors.ENDC
 
+                    print(options.checkout)
+                    # Push to the remote
+                    if False != options.checkout:
+                        push = commands.getoutput(
+                            'cd '+ infile +
+                            '; git checkout '+
+                            options.checkout
+                        )
+                        result = result + " (Pushed) \n" + push
+
                     # Pull from the remote
                     if False != options.pull:
                         push = commands.getoutput(
@@ -149,7 +167,7 @@ if __name__ == "__main__":
 		    result = bcolors.FAIL + "Changes" + bcolors.ENDC
 
                 # Write to screen
-                sys.stdout.write("--" + bcolors.OKBLUE + infile.ljust(55) + bcolors.ENDC + branch + " : " + result +"\n")
+                sys.stdout.write("--" + bcolors.OKBLUE + infile + bcolors.ENDC + branch + " : " + result +"\n")
 
             else:
                 #Print some repo details
