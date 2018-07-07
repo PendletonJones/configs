@@ -23,7 +23,6 @@ shopt -s dotglob nullglob # glob regular patterns
 
 # this causes an issue on mac
 # make sure it does something on linux then come back to it 
-setxkbmap -option ctrl:nocaps
 
 
 
