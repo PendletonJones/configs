@@ -109,4 +109,6 @@ export PATH
 # CDPATH=.:~/etc:/VAR
 
 # also, make a readme.md that includes all of the shortcuts, etc so I 
-# don't have to pull them up all the time. 
+# don't have to pull them up all the time.
+
+alias subl='"/mnt/c/Program Files/Sublime Text 3/subl.exe"'
