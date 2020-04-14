@@ -49,3 +49,6 @@ alias tmux="TERM=screen-256color-bce tmux"
 tatt(){
 	tmux a -t $1
 }
+
+alias ssh-rpi="ssh pi@raspberrypi"
+alias ssh-desk='ssh pendleton@pendleton-All-Series'
